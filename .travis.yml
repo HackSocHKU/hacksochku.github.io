@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+before_script:
+  - "npm i -g gatsby"
+  - "npm i"
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  local_dir: public
+  keep-history: true
+  on:
+    branch: master
+after_success:
+  - "npm run deploy"
+notifications:
+  email:
+    on_success: always
+    on_failure: always
