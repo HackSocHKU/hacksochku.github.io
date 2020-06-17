@@ -8,10 +8,10 @@ before_script:
   - "npm i -g gatsby-cli"
   - "npm i"
 deploy:
-  provider: pages
+  provider: script
+  script: npm run deploy
   skip-cleanup: true
   github-token: $GH_TOKEN
-  local_dir: public
   keep-history: true
   on:
     branch: master
