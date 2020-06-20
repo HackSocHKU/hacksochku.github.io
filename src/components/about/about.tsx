@@ -16,6 +16,7 @@ export const About: FunctionComponent = () => (
     align="center"
     textAlign="left"
     direction="column"
+    backgroundColor="secondary"
   >
     <Box>
       <Heading textAlign="center" as="h1" size="2xl">

@@ -7,6 +7,7 @@ export default {
   colors: {
     ...colors,
     primary: "#fff",
+    secondary: "#F7FAFC",
     text: "#000",
   },
   breakpoints: ["30em", "48em", "62em", "80em"],
