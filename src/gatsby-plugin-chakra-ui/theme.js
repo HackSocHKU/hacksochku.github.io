@@ -7,12 +7,7 @@ export default {
   colors: {
     ...colors,
     primary: "#fff",
-    secondary: "#000",
-  },
-  fonts: {
-    body: "system-ui, sans-serif",
-    heading: "Georgia, serif",
-    mono: "Menlo, monospace",
+    text: "#000",
   },
   breakpoints: ["30em", "48em", "62em", "80em"],
 };
