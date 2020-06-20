@@ -1,8 +1,14 @@
 import React, { FunctionComponent } from "react";
+import { Box, Text } from "@chakra-ui/core";
+
+import { About, Sponsors } from "../components";
 
 const IndexPage: FunctionComponent = () => {
   return (
-    <p>hello world</p>
+    <Box backgroundColor="primary">
+      <About />
+      <Sponsors />
+    </Box>
   );
 };
 
