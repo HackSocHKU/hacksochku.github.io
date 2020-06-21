@@ -9,6 +9,7 @@ export default {
     primary: "#fff",
     secondary: "#F7FAFC",
     text: "#000",
+    navItem: "#A0AEC0",
   },
   breakpoints: ["30em", "48em", "62em", "80em"],
 };

@@ -10,6 +10,7 @@ const visionDescription =
 
 export const About: FunctionComponent = () => (
   <Flex
+    id="about"
     px={[10, 20, 30, 40]}
     py={[10, 10, 20, 20]}
     color="text"

@@ -6,6 +6,7 @@ import { listOfSponsors } from "./listOfSponsors";
 
 export const Sponsors: FunctionComponent = () => (
   <Flex
+    id="sponsors"
     backgroundColor="primary"
     p={[10, 10, 20, 20]}
     direction="column"
