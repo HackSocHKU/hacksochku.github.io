@@ -14,14 +14,23 @@ export const Home: FunctionComponent = () => (
     textAlign="center"
     direction="column"
   >
-    <Heading color="primary" as="h1" size="2xl" fontSize={[45, 75, 100, 100]}>
+    <Heading
+      color="primary"
+      as="h1"
+      size="2xl"
+      fontSize={[45, 75, 100, 100]}
+      display="flex"
+    >
+      {"<"}
       <Typewriter
         options={{
-          strings: ["</HackSoc>"],
+          strings: ["HackSoc"],
           autoStart: true,
           loop: true,
+          cursor: "",
         }}
       />
+      {"/>"}
     </Heading>
     <Social />
   </Flex>
