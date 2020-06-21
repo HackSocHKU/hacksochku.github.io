@@ -9,19 +9,19 @@ import {
 
 const socialAccounts = [
   {
-    icon: <FacebookIcon size={20} />,
+    icon: <FacebookIcon size={25} color="#fff" />,
     link: "https://www.facebook.com/hacksochku",
   },
   {
-    icon: <LinkedInIcon size={20} />,
+    icon: <LinkedInIcon size={25} color="#fff" />,
     link: "https://www.linkedin.com/company/hackathon-society-hku/",
   },
   {
-    icon: <InstagramIcon size={20} />,
+    icon: <InstagramIcon size={25} color="#fff" />,
     link: "https://www.instagram.com/hacksoc_hku/",
   },
   {
-    icon: <GithubIcon size={20} />,
+    icon: <GithubIcon size={25} color="#fff" />,
     link: "https://github.com/HackSocHKU",
   },
 ];

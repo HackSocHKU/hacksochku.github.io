@@ -14,10 +14,10 @@ export const Home: FunctionComponent = () => (
     textAlign="center"
     direction="column"
   >
-    <Heading color="primary" as="h1" size="2xl" fontSize={[50, 75, 100, 100]}>
+    <Heading color="primary" as="h1" size="2xl" fontSize={[45, 75, 100, 100]}>
       <Typewriter
         options={{
-          strings: ["HKU Hackathon Society"],
+          strings: ["</HackSoc>"],
           autoStart: true,
           loop: true,
         }}
