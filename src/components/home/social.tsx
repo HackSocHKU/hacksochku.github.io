@@ -9,22 +9,18 @@ import {
 
 const socialAccounts = [
   {
-    id: "facebook",
     icon: <FacebookIcon size={20} />,
     link: "https://www.facebook.com/hacksochku",
   },
   {
-    id: "linkedin",
     icon: <LinkedInIcon size={20} />,
     link: "https://www.linkedin.com/company/hackathon-society-hku/",
   },
   {
-    id: "instagram",
     icon: <InstagramIcon size={20} />,
     link: "https://www.instagram.com/hacksoc_hku/",
   },
   {
-    id: "github",
     icon: <GithubIcon size={20} />,
     link: "https://github.com/HackSocHKU",
   },
@@ -32,8 +28,8 @@ const socialAccounts = [
 
 export const Social: FunctionComponent = () => (
   <Flex my={10}>
-    {socialAccounts.map(({ id, icon, link }) => (
-      <Link href={link} isExternal mx={5}>
+    {socialAccounts.map(({ icon, link }, index) => (
+      <Link key={index} href={link} isExternal mx={5}>
         {icon}
       </Link>
     ))}
