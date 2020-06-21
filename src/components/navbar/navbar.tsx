@@ -16,7 +16,9 @@ const routes = [
   },
 ];
 
-export const NavBar: FunctionComponent = () => (
+export const NavBar: FunctionComponent<{ location: string }> = ({
+  location,
+}) => (
   <Flex
     as="nav"
     align="center"

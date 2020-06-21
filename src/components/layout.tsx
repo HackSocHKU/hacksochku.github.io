@@ -4,11 +4,17 @@ import { Box } from "@chakra-ui/core";
 import { NavBar } from "./navbar";
 import "./layout.css";
 
-export const Layout: FunctionComponent<{ children: ReactNode }> = ({
+interface LayoutComponentProps {
+  children: ReactNode;
+  locations: string;
+}
+
+export const Layout: FunctionComponent<LayoutComponentProps> = ({
   children,
+  location,
 }) => (
   <>
-    <NavBar />
+    <NavBar location={location} />
     <Box as="main" flexDirection="column">
       {children}
     </Box>
