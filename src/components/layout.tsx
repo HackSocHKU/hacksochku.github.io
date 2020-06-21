@@ -2,6 +2,7 @@ import React, { FunctionComponent, ReactNode } from "react";
 import { Box } from "@chakra-ui/core";
 
 import { NavBar } from "./navbar";
+import "./layout.css";
 
 export const Layout: FunctionComponent<{ children: ReactNode }> = ({
   children,
