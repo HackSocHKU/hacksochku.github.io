@@ -18,6 +18,10 @@ const routes = [
     id: "sponsors",
     text: "Sponsors",
   },
+  {
+    id: "contact",
+    text: "Contact",
+  },
 ];
 
 export const NavBar: FunctionComponent<{ location: string }> = ({
