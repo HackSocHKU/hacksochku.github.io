@@ -7,6 +7,10 @@ import hackSocLogo from "../../assets/hackSocLogo.svg";
 
 const routes = [
   {
+    id: "home",
+    text: "Home",
+  },
+  {
     id: "about",
     text: "About",
   },
