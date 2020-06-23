@@ -1,9 +1,9 @@
 import React, { FunctionComponent } from "react";
-import { Flex, Text, Box } from "@chakra-ui/core";
+import { Flex, Text, Image } from "@chakra-ui/core";
 import { Link } from "gatsby";
 
 import { NavItem } from "./navitem";
-import hackSocLogo from "../../assets/hackSocLogo.svg";
+import hackSocLogo from "../../assets/images/hackSocLogo.png";
 
 const routes = [
   {
@@ -39,8 +39,8 @@ export const NavBar: FunctionComponent<{ location: string }> = ({
   >
     <Flex flex={1}>
       <Link to="">
-        <Box
-          as={hackSocLogo}
+        <Image
+          src={hackSocLogo}
           w={[10, 12, 16, 16]}
           h={[10, 12, 16, 16]}
           mx={[5, 5, 20, 20]}
