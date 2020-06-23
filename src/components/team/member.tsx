@@ -17,7 +17,7 @@ export const Member: FunctionComponent<MemberComponentProps> = ({
 }) => {
   return (
     <Flex direction="column" justify="center" m={5}>
-      <Image src={picture} w={40} h={40} />
+      <Image src={picture} w={250} h={300} borderRadius={5} />
     </Flex>
   );
 };
