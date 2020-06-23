@@ -1,4 +1,4 @@
-import iDendronLogo from "../../assets/sponsors/iDendronLogo.svg";
+import iDendronLogo from "../../assets/SVGs/sponsors/iDendronLogo.svg";
 
 export const listOfSponsors = [
   {
