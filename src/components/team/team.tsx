@@ -10,7 +10,7 @@ export const Team: FunctionComponent = () => (
     backgroundColor="text"
     direction="column"
     justify="center"
-    px={[10, 20, 30, 40]}
+    px={[10, 20, 30, 30]}
     py={[10, 10, 20, 20]}
   >
     <Heading color="primary" textAlign="center" as="h1" size="2xl">
