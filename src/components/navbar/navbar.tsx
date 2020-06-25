@@ -28,8 +28,14 @@ const routes = [
   },
 ];
 
-export const NavBar: FunctionComponent<{ location: string }> = ({
-  location,
+interface NavBarComponentProps {
+  activeHash: string;
+  setActiveHash: (activeHash: string) => void;
+}
+
+export const NavBar: FunctionComponent<NavBarComponentProps> = ({
+  activeHash,
+  setActiveHash,
 }) => (
   <Flex
     as="nav"
@@ -58,7 +64,8 @@ export const NavBar: FunctionComponent<{ location: string }> = ({
           key={id}
           id={id}
           text={text}
-          locationHash={location.hash}
+          activeHash={activeHash}
+          setActiveHash={setActiveHash}
         ></NavItem>
       ))}
     </Flex>

@@ -11,9 +11,9 @@ import {
   Footer,
 } from "../components";
 
-const IndexPage: FunctionComponent<{ location: string }> = ({ location }) => {
+const IndexPage: FunctionComponent<> = () => {
   return (
-    <Layout location={location}>
+    <Layout>
       <Home />
       <About />
       <Sponsors />

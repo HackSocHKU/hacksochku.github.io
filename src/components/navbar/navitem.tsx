@@ -5,17 +5,19 @@ import { Link } from "gatsby";
 interface NavItemComponentProps {
   id: string;
   text: string;
-  loocationHash: string;
+  activeHash: string;
+  setActiveHash: (activeHash: string) => void;
 }
 
 export const NavItem: FunctionComponent<NavItemComponentProps> = ({
   id,
   text,
-  locationHash,
+  activeHash,
+  setActiveHash,
 }) => (
-  <Link to={`/#${id}`}>
+  <Link to={`#${id}`} onClick={() => setActiveHash(`#${id}`)}>
     <Text
-      color={locationHash === `#${id}` ? "text" : "navItem"}
+      color={activeHash === `#${id}` ? "text" : "navItem"}
       px={[1, 1, 2, 2]}
       fontSize={["sm", "md", "lg", "lg"]}
       fontWeight={500}
