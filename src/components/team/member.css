@@ -1,0 +1,5 @@
+.member-card-container {
+  border-radius: 5px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}

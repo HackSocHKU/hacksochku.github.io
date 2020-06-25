@@ -19,6 +19,10 @@ const routes = [
     text: "Sponsors",
   },
   {
+    id: "team",
+    text: "Team",
+  },
+  {
     id: "contact",
     text: "Contact",
   },
@@ -36,6 +40,7 @@ export const NavBar: FunctionComponent<{ location: string }> = ({
     top={0}
     backgroundColor="secondary"
     opacity={0.8}
+    zIndex={1}
   >
     <Flex flex={1}>
       <Link to="">

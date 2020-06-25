@@ -1,5 +1,7 @@
-import React, { FunctionComponent } from "react";
-import { Flex, Image, Box } from "@chakra-ui/core";
+import React, { FunctionComponent, useState } from "react";
+import { Flex, Image, Box, Text } from "@chakra-ui/core";
+
+import "./member.css";
 
 interface MemberDetails {
   name: string;
@@ -16,7 +18,7 @@ export const Member: FunctionComponent<MemberComponentProps> = ({
   memberDetails: { name, role, picture, linkedin },
 }) => {
   return (
-    <Flex direction="column" justify="center" m={5}>
+    <Flex className="member-card-container" m={5}>
       <Image src={picture} w={250} h={300} borderRadius={5} />
     </Flex>
   );
