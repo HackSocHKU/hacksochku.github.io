@@ -2,7 +2,7 @@
   border-radius: 5px;
   margin: 20px;
   width: 250px;
-  height: 300px;
+  height: 380px;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
 }
@@ -34,4 +34,9 @@
   backface-visibility: hidden;
   overflow: hidden;
   transform: rotateY(180deg);
+}
+
+.social-icon:hover {
+  position: relative;
+  top: -5px;
 }

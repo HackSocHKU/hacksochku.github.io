@@ -13,6 +13,7 @@ interface MemberDetails {
   picture: string;
   linkedin?: string;
   github?: string;
+  description?: string;
 }
 
 interface MemberComponentProps {
@@ -20,27 +21,47 @@ interface MemberComponentProps {
 }
 
 const MemberInfo: FunctionComponent<MemberComponentProps> = ({
-  memberDetails: { name, role, linkedin, github },
+  memberDetails: { description, linkedin, github },
 }) => (
   <Flex
     className="member-card-back"
     align="center"
     justify="center"
+    textAlign="center"
     direction="column"
+    p={5}
   >
-    <Heading size="lg">{name}</Heading>
-    <Text>{role}</Text>
+    <Text>{description}</Text>
     <Flex my={2}>
       {linkedin && (
-        <Link href={linkedin} isExternal mx={1}>
-          <LinkedInIcon size={20} color="#000" />
+        <Link className="social-icon" href={linkedin} isExternal mx={1}>
+          <LinkedInIcon size={25} color="#000" />
         </Link>
       )}
       {github && (
-        <Link href={github} isExternal mx={1}>
-          <GithubIcon size={20} color="#000" />
+        <Link className="social-icon" href={github} isExternal mx={1}>
+          <GithubIcon size={25} color="#000" />
         </Link>
       )}
+    </Flex>
+  </Flex>
+);
+
+const MemberPicture: FunctionComponent<MemberComponentProps> = ({
+  memberDetails: { picture, name, role },
+}) => (
+  <Flex className="member-card-front" direction="column">
+    <Image src={picture} h="80%" w="100%" />
+    <Flex
+      backgroundColor="primary"
+      color="text"
+      direction="column"
+      justify="center"
+      align="center"
+      h="100%"
+    >
+      <Heading size="md">{name}</Heading>
+      <Text>{role}</Text>
     </Flex>
   </Flex>
 );
@@ -52,7 +73,7 @@ export const Member: FunctionComponent<MemberComponentProps> = ({
 
   return (
     <Flex className="member-card-container">
-      <Image src={picture} className="member-card-front" />
+      <MemberPicture memberDetails={memberDetails} />
       <MemberInfo memberDetails={memberDetails} />
     </Flex>
   );

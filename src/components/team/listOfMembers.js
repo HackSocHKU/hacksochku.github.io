@@ -31,6 +31,8 @@ export const listOfMembers = [
     role: "Head of Technology",
     linkedin: "https://www.linkedin.com/in/welvin-bun/",
     github: "https://github.com/welvin21",
+    description:
+      "I enjoy taking complex problems and turning them into simple and efficient solutions using code.",
   },
   {
     name: "Alima Medetova",
