@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useState } from "react";
-import { Flex, Image, Text, Heading, Link } from "@chakra-ui/core";
+import { Flex, Image, Text, Heading, Link, Grid } from "@chakra-ui/core";
 import {
   FaLinkedin as LinkedInIcon,
   FaGithub as GithubIcon,
@@ -50,8 +50,8 @@ const MemberInfo: FunctionComponent<MemberComponentProps> = ({
 const MemberPicture: FunctionComponent<MemberComponentProps> = ({
   memberDetails: { picture, name, role },
 }) => (
-  <Flex className="member-card-front" direction="column">
-    <Image src={picture} h="80%" w="100%" />
+  <Grid className="member-card-front" templateRows="80% 20%">
+    <Image src={picture} h="100%" w="100%" />
     <Flex
       backgroundColor="primary"
       color="text"
@@ -63,7 +63,7 @@ const MemberPicture: FunctionComponent<MemberComponentProps> = ({
       <Heading size="md">{name}</Heading>
       <Text>{role}</Text>
     </Flex>
-  </Flex>
+  </Grid>
 );
 
 export const Member: FunctionComponent<MemberComponentProps> = ({
