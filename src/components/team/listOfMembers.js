@@ -5,9 +5,9 @@ import welvin from "../../assets/images/members/welvin.jpg";
 import alima from "../../assets/images/members/alima.jpg";
 import aarushi from "../../assets/images/members/aarushi.jpg";
 import reynard from "../../assets/images/members/reynard.jpg";
-import anuj from '../../assets/images/members/anuj.jpg';
-import pranay from '../../assets/images/members/pranay.jpg';
-import sakina from '../../assets/images/members/sakina.jpg';
+import anuj from "../../assets/images/members/anuj.jpg";
+import pranay from "../../assets/images/members/pranay.jpg";
+import sakina from "../../assets/images/members/sakina.jpg";
 
 export const listOfMembers = [
   {
@@ -73,10 +73,10 @@ export const listOfMembers = [
     name: "Anuj Bhatia",
     picture: anuj,
     role: "Head of Finance",
-    linkedin: "https://www.linkedin.com/in/reynard-verill-234685196/",
+    linkedin: "https://www.linkedin.com/in/anujbhatia2600/",
     github: "https://www.github.com/anujbhatia2600",
     description:
-      "Anuj Description.",
+      "Anuj is a Computer Science major at the University of Hong Kong. Computer Problem? No Problem! Finance minor helps me out those numbers, hit me up if need any help with them!",
   },
   {
     name: "Pranay Agarwal",
