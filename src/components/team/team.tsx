@@ -14,7 +14,7 @@ export const Team: FunctionComponent = () => (
     py={[10, 10, 20, 20]}
   >
     <Heading color="primary" textAlign="center" as="h1" size="2xl">
-      The Team
+      <span style={{ fontWeight: "normal" }}>The</span> Team
     </Heading>
     <Flex maxW="100vw" wrap="wrap" align="center" justify="center">
       {listOfMembers.map((memberDetails, index) => (

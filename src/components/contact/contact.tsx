@@ -4,6 +4,7 @@ import {
   MdLocationOn as LocationIcon,
   MdEmail as EmailIcon,
 } from "react-icons/md";
+import './contact.css'
 
 const Address: FunctionComponent = () => (
   <Flex justify="center" align="center" mb={10}>
@@ -44,7 +45,7 @@ export const Contact: FunctionComponent = () => (
     p={[5, 10, 20, 20]}
   >
     <Heading textAlign="center" as="h1" size="2xl">
-      Contact Us
+      Contact <span>Us</span>
     </Heading>
     <Flex
       px={[5, 10, 15, 20]}

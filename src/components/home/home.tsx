@@ -8,14 +8,14 @@ export const Home: FunctionComponent = () => (
   <Flex
     id="home"
     h="100vh"
-    backgroundColor="text"
+    backgroundColor="white"
     align="center"
     justify="center"
     textAlign="center"
     direction="column"
   >
     <Heading
-      color="primary"
+      color="black"
       as="h1"
       size="2xl"
       fontSize={[45, 75, 100, 100]}
