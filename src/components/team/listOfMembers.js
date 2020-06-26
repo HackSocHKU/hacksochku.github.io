@@ -25,7 +25,7 @@ export const listOfMembers = [
     role: "Vice President",
     linkedin: "https://www.linkedin.com/in/anubhav-garg-9658a9a1/",
     description:
-      "Anubhav is Computer Science student at the University of Hong Kong. An ever smiling, super organised leader who is the first to arrive in every meeting! Determined, hard working team player passionate about doing the difficult things in an easy way.",
+      "Anubhav is a Computer Science student at the University of Hong Kong. An ever smiling, super organised leader who is the first to arrive in every meeting! Determined, hard working team player passionate about doing the difficult things in an easy way.",
   },
   {
     name: "Tasnia Ishrar",
