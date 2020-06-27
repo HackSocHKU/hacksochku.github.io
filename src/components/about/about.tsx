@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react";
 import { Box, Flex, Text, Heading } from "@chakra-ui/core";
+import './about.css'
 
 const aboutDescription =
   "We are a not-for-profit student organization at The University of Hong Kong. Our aim is to foster creative and entrepreneurial minds and provide them with the necessary skills and confidence to participate in hackathons and go on to build extraordinary things in the future. We promote an environment of original thinking. The society aims to conduct regular workshops for activities such as design thinking, public speaking, app development, business development and much more. We also aim to bring these ideas and novel products to reality with the help of our very capable sponsors.";
@@ -21,7 +22,7 @@ export const About: FunctionComponent = () => (
   >
     <Box>
       <Heading textAlign="center" as="h1" size="2xl">
-        About Us
+        About <span>Us</span>
       </Heading>
       <Text fontSize={["md", "md", "lg", "lg"]} my={5}>
         {aboutDescription}
