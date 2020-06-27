@@ -20,7 +20,7 @@ export const NavItem: FunctionComponent<NavItemComponentProps> = ({
       color={activeHash === `#${id}` ? "text" : "navItem"}
       px={[1, 1, 2, 2]}
       fontSize={["sm", "md", "lg", "lg"]}
-      fontWeight={500}
+      fontWeight={activeHash === `#${id}` ? 700 : 500}
     >
       {text}
     </Text>

@@ -31,7 +31,7 @@ const MemberInfo: FunctionComponent<MemberComponentProps> = ({
     direction="column"
     p={5}
   >
-    <Text>{description}</Text>
+    <Text fontSize={18}>{description}</Text>
     <Flex my={2}>
       {linkedin && (
         <Link className="social-icon" href={linkedin} isExternal mx={1}>
