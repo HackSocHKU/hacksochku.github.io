@@ -17,13 +17,14 @@ export const listOfMembers = [
     linkedin: "https://www.linkedin.com/in/siddharthagarwal2608/",
     github: "https://www.github.com/zweistein1326",
     description:
-      "Siddharth enjoys building new things that can bring about a change in the world. He is passionate about space and loves learning about new technologies. He believes in making the world a better and simpler place, one step at a time. He is currently a penultimate year student studying Computer Science and Astronomy at the University of Hong Kong.",
+      "Siddharth enjoys building new things that can bring about a change in the world. He is passionate about space and loves exploring new technologies. He believes in making the world a better and simpler place, one step at a time. Siddharth is currently a penultimate year student studying Computer Science and Astronomy at the University of Hong Kong.",
   },
   {
     name: "Anubhav Garg",
     picture: anubhav,
     role: "Vice President",
     linkedin: "https://www.linkedin.com/in/anubhav-garg-9658a9a1/",
+    github: "https://github.com/anubhavgarg123",
     description:
       "Anubhav is a Computer Science student at the University of Hong Kong. An ever smiling, super organised leader who is the first to arrive in every meeting! Determined, hard working team player passionate about doing the difficult things in an easy way.",
   },
@@ -32,6 +33,7 @@ export const listOfMembers = [
     picture: tasnia,
     role: "Head of External Relations",
     linkedin: "http://linkedin.com/in/tasnia-ishrar-r-013219173",
+    github: "https://github.com/tasniaishrar",
     description:
       "Tasnia is pursuing Bachelor of Engineering at The University of Hong Kong. She is an avid learner, and her hobbies include painting and coding.",
   },
@@ -42,7 +44,7 @@ export const listOfMembers = [
     linkedin: "https://www.linkedin.com/in/welvin-bun/",
     github: "https://github.com/welvin21",
     description:
-      "A passionate programmer who enjoys taking complex problems and turning them into simple and efficient solutions using code. He is currently a Computer Science student at the University of Hong Kong.",
+      "A passionate programmer who enjoys taking complex problems and turning them into simple and efficient solutions using code. Welvin is currently a Computer Science student at the University of Hong Kong.",
   },
   {
     name: "Alima Medetova",
@@ -50,13 +52,14 @@ export const listOfMembers = [
     role: "Head of Event Management",
     linkedin: "http://linkedin.com/in/alima-medetova-27b589175",
     description:
-      "Passionate, organised and detail-oriented. The key traits of our Events Manager, Alima. Loves to take challenges and does her best in commitments - something that makes her good at exploring new opportunities and getting things done.",
+      "Passionate, organised and detail-oriented. The key traits of our Events Manager, Alima. Loves to take challenges and does her best in commitments - something that makes her good at exploring new opportunities and getting things done. She is currently pursuing Bachelors of Engineering at the University of Hong Kong",
   },
   {
     name: "Aarushi Goyal",
     picture: aarushi,
     role: "Head of Corporate Relations",
     linkedin: "http://linkedin.com/in/aarushi-goyal-6b5226190",
+    github: "https://github.com/aarushi26-sys",
     description:
       "An inquisitive problem solver, Aarushi is a social aficionado whose love for Technology is complemented by her dynamic problem solving abilities. She is currently a sophomore studying Engineering at the University of Hong Kong.",
   },
