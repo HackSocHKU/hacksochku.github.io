@@ -96,6 +96,6 @@ export const listOfMembers = [
     role: "Head of Creative Design",
     linkedin: "https://www.linkedin.com/in/reynard-verill-234685196/",
     description:
-      "Sikina is majoring in Global Creative Industires and minoring in Arabic at the University of Hong Kong. She is a polyglot and quirky art enthusiast who's obsessed with felines.",
+      "Sakina is majoring in Global Creative Industires and minoring in Arabic at the University of Hong Kong. She is a polyglot and quirky art enthusiast who's obsessed with felines.",
   },
 ];
