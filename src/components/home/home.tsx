@@ -3,6 +3,7 @@ import { Flex, Heading } from "@chakra-ui/core";
 import Typewriter from "typewriter-effect";
 
 import { Social } from "./social";
+import "./home.css";
 
 export const Home: FunctionComponent = () => (
   <Flex
