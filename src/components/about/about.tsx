@@ -2,11 +2,11 @@ import React, { FunctionComponent } from "react";
 import { Box, Flex, Text, Heading } from "@chakra-ui/core";
 
 const aboutDescription =
-  "We are a not-for-profit student organization at The University of Hong Kong. Our aim is to foster creative and entrepreneurial minds and provide them with the necessary skills and confidence to participate in hackathons and go on to build extraordinary things in the future. We promote an environment of original thinking. The society aims to conduct regular workshops for activities such as design thinking, public speaking, app development, business development and much more. We also aim to bring these ideas and novel products to reality with the help of our very capable sponsors.";
+  "We are a non-profit student organization at The University of Hong Kong. Our aim is to create an environment of innovation, fostering entrepreneurial minds, by providing our members with the relevant skills and experience to participate in hackathons and encourage them to put their capabilities towards building extraordinary things. The society plans to work towards this goal by organizing workshops on hackathon-relevant skills and providing members with a platform to collaborate and actualise their dreams. This opportunity has been made possible with the help of our very capable sponsors.";
 const aboutDescription2 =
-  "HackSoc has taken on the responsibility for organising a hackathon sponsored by the most prestigious university in the country. If you need a break from your project during hackathons, other activities such as competitive coding, website designing comps, gaming competitions will be going on the side.";
+  "HackSoc has taken on the responsibility of organizing an annual hackathon, sponsored by the most prestigious university in Hong Kong, to bring together a community of tech-loving individuals and solve real-world problems. During the hackathon, we look forward to organizing mini-challenges and competitions to promote friendly competition and interaction between the participants.";
 const visionDescription =
-  "Hackathon society is aimed towards including international students in more activities across the campus and creating a healthy relationship between locals and the internationals. We also want to promote creativity and curiosity among students so that they take initiatives to start their own university funded projects.";
+  "The Hackathon Society is working towards building a community for all students. We plan to achieve this goal by creating activities across campus and opportunities for cross-disciplinary, as well as multinational, collaborative projects. By promoting an attitude favouring curiosity, creativity and collaboration, we hope to inspire students to grow their networks and take initiative to bring their ideas to life.";
 
 export const About: FunctionComponent = () => (
   <Flex
