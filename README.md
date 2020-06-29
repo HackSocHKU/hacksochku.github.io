@@ -8,9 +8,9 @@ The website was developed and is maintained using [GatsbyJS](https://www.gatsbyj
 
 #### Getting started
 
-1. nstall [NodeJS and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+1. Install [NodeJS and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 2. Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-3. Install 'Gatsby-CLI' via the following command 'npm install -g gatsby-cli'.
-4. Clone this repository, 'git clone https://github.com/HackSocHKU/hacksoc_website.git'.
-5. Execute 'gatsby develop' in the root directory of this project.
-6. The local development version will be accessible on 'localhost:8000'.
+3. Install `Gatsby-CLI` via the following command `npm install -g gatsby-cli`.
+4. Clone this repository, `git clone https://github.com/HackSocHKU/hacksoc_website.git`.
+5. Execute `gatsby develop` in the root directory of this project.
+6. The local development version will be accessible on `localhost:8000`.
