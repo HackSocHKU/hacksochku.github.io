@@ -5,3 +5,4 @@ export { Sponsors } from "./sponsors";
 export { Team } from "./team";
 export { Contact } from "./contact";
 export { Footer } from "./footer";
+export { Advisors } from "./advisors";

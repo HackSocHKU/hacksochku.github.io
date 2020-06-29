@@ -9,6 +9,7 @@ import {
   Team,
   Contact,
   Footer,
+  Advisors,
 } from "../components";
 
 const IndexPage: FunctionComponent<> = () => {
@@ -17,6 +18,7 @@ const IndexPage: FunctionComponent<> = () => {
       <Home />
       <About />
       <Sponsors />
+      <Advisors />
       <Team />
       <Contact />
       <Footer />
