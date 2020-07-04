@@ -11,7 +11,8 @@ export const Advisors: FunctionComponent = () => (
     direction="column"
     justify="center"
     px={[2, 10, 30, 30]}
-    py={[10, 10, 20, 20]}
+    pb={[5, 5, 10, 10]}
+    pt={[20, 20, 40, 40]}
   >
     <Heading color="primary" textAlign="center" as="h1" size="2xl">
       <span style={{ fontWeight: "normal" }}>Our</span> Advisors
