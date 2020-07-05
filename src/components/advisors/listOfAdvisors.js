@@ -1,5 +1,6 @@
 import freddy from "../../assets/images/advisors/freddy.png";
 import cesar from "../../assets/images/advisors/cesar.png";
+import henry_lau from "../../assets/images/advisors/henry_lau.png";
 
 export const listOfAdvisors = [
   {
@@ -17,5 +18,12 @@ export const listOfAdvisors = [
     linkedin: "https://www.linkedin.com/in/cesarharada",
     description:
       "Cesar Jung-Harada is a Senior Lecturer for the Design+ Bachelor of Arts and Sciences Programme. He teaches both technical and theoretical aspects of design with an emphasis on invention with social and environmental impact.",
+  },
+  {
+    name: "Dr. Henry Y.K. Lau",
+    picture: henry_lau,
+    role: "Advisor",
+    description:
+      "Dr. Lau is the Associate Dean of Engineering (Innovation) at the University of Hong Kong. His research interest includes virtual and augmented reality, and artificial intelligence. He is also interested in the design and evaluation of automated material handling systems using computer simulation. He leads the development of the IMSE CAVE VR system with researchers at the Department of Industrial and Manufacturing Systems Engineering.",
   },
 ];
