@@ -1,6 +1,8 @@
 import freddy from "../../assets/images/advisors/freddy.png";
 import cesar from "../../assets/images/advisors/cesar.png";
 import henry_lau from "../../assets/images/advisors/henry_lau.png";
+import kaimin_shih from "../../assets/images/advisors/kaimin_shih.png";
+import { Advisor } from "./advisor";
 
 export const listOfAdvisors = [
   {
@@ -25,5 +27,12 @@ export const listOfAdvisors = [
     role: "Advisor",
     description:
       "Dr. Lau is the Associate Dean of Engineering (Innovation) at the University of Hong Kong. His research interest includes virtual and augmented reality, and artificial intelligence. He is also interested in the design and evaluation of automated material handling systems using computer simulation. He leads the development of the IMSE CAVE VR system with researchers at the Department of Industrial and Manufacturing Systems Engineering.",
+  },
+  {
+    name: "Dr. Kaimin Shih",
+    picture: kaimin_shih,
+    role: "Advisor",
+    description:
+      "Dr Kaimin Shih is an Associate Professor in the Department of Civil Engineering at the University of Hong Kong (HKU). He received his M.S. and Ph.D. degrees in Environmental Engineering and Science from Stanford University at US. Dr. Shih is a sustainability advocate and his research work is mainly to engineer and employ material properties for innovative waste and water treatment applications. He is particularly interested in exploring pollutant behavior on material surfaces and extensively conducts research projects related to hazardous metals, emerging pollutants, membrane materials, soil remediation, and sludge/ash management.",
   },
 ];
