@@ -1,11 +1,11 @@
 import React, { FunctionComponent } from "react";
-import { Box, Text } from "@chakra-ui/core";
 
 import {
   Home,
   Layout,
   About,
   Sponsors,
+  Advisors,
   Team,
   Contact,
   Footer,
@@ -17,6 +17,7 @@ const IndexPage: FunctionComponent<> = () => {
       <Home />
       <About />
       <Sponsors />
+      <Advisors />
       <Team />
       <Contact />
       <Footer />
