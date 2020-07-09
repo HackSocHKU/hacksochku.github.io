@@ -45,10 +45,5 @@ export const About: FunctionComponent = () => (
   >
     <AboutContent />
     <VisionContent />
-    <Link to="/advisors">
-      <Button variant="outlined" backgroundColor="text" color="primary" m={5}>
-        See our advisors
-      </Button>
-    </Link>
   </Flex>
 );
