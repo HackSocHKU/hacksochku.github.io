@@ -1,11 +1,23 @@
-import React, { FunctionComponent, useState } from "react";
-import { Flex, Image, Text, Heading, Link, Grid } from "@chakra-ui/core";
+import React, { FunctionComponent, useState, useRef } from "react";
+import {
+  Flex,
+  Image,
+  Text,
+  Heading,
+  Link,
+  Grid,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalCloseButton,
+  Scale,
+} from "@chakra-ui/core";
 import {
   FaLinkedin as LinkedInIcon,
   FaGithub as GithubIcon,
 } from "react-icons/fa";
-
-import "./advisor.css";
 
 interface AdvisorDetails {
   name: string;
@@ -20,61 +32,62 @@ interface AdvisorComponentProps {
   advisorDetails: AdvisorDetails;
 }
 
-const AdvisorInfo: FunctionComponent<AdvisorComponentProps> = ({
-  advisorDetails: { description, linkedin, github },
+const SocialAccounts: FunctionComponent<AdvisorComponentProps> = ({
+  advisorDetails: { linkedin, github },
 }) => (
-  <Flex
-    className="advisor-card-back"
-    align="center"
-    justify="center"
-    textAlign="center"
-    direction="column"
-    p={5}
-  >
-    <Text fontSize={18}>{description}</Text>
-    <Flex my={2}>
-      {linkedin && (
-        <Link className="social-icon" href={linkedin} isExternal mx={1}>
-          <LinkedInIcon size={25} color="#000" />
-        </Link>
-      )}
-      {github && (
-        <Link className="social-icon" href={github} isExternal mx={1}>
-          <GithubIcon size={25} color="#000" />
-        </Link>
-      )}
-    </Flex>
+  <Flex align="center" justify="center">
+    {linkedin && (
+      <Link href={linkedin} isExternal mx={1}>
+        <LinkedInIcon size={20} color="#fff" />
+      </Link>
+    )}
+    {github && (
+      <Link href={github} isExternal mx={1}>
+        <GithubIcon size={20} color="#fff" />
+      </Link>
+    )}
   </Flex>
-);
-
-const AdvisorPicture: FunctionComponent<AdvisorComponentProps> = ({
-  advisorDetails: { picture, name, role },
-}) => (
-  <Grid className="advisor-card-front" templateRows="80% 20%">
-    <Image src={picture} h="100%" w="100%" />
-    <Flex
-      backgroundColor="primary"
-      color="text"
-      direction="column"
-      justify="center"
-      align="center"
-      h="100%"
-    >
-      <Heading size="md">{name}</Heading>
-      <Text>{role}</Text>
-    </Flex>
-  </Grid>
 );
 
 export const Advisor: FunctionComponent<AdvisorComponentProps> = ({
   advisorDetails,
 }) => {
-  const { picture } = advisorDetails;
+  const [isModalOpen, setModalOpen] = useState(false);
+  const modalRef = useRef();
+  const { picture, name, description } = advisorDetails;
 
   return (
-    <Flex className="advisor-card-container">
-      <AdvisorPicture advisorDetails={advisorDetails} />
-      <AdvisorInfo advisorDetails={advisorDetails} />
+    <Flex m={5} direction="column" align="center" flexGrow={1} flexWrap="wrap">
+      <Scale in={isModalOpen}>
+        {styles => (
+          <Modal
+            finalFocusRef={modalRef}
+            isOpen={isModalOpen}
+            onClose={() => setModalOpen(false)}
+            size={"min(90%, 600px)"}
+          >
+            <ModalOverlay />
+            <ModalContent
+              backgroundColor="primary"
+              color="text"
+              borderRadius={5}
+              {...styles}
+            >
+              <ModalHeader>{name}</ModalHeader>
+              <ModalCloseButton />
+              <ModalBody>{description}</ModalBody>
+            </ModalContent>
+          </Modal>
+        )}
+      </Scale>
+
+      <Image my={1} src={picture} alt={name} rounded="full" size={300} />
+      <Link>
+        <Heading my={1} as="h6" size="sm" onClick={() => setModalOpen(true)}>
+          {name}
+        </Heading>
+      </Link>
+      <SocialAccounts advisorDetails={advisorDetails} />
     </Flex>
   );
 };

@@ -2,7 +2,6 @@ import freddy from "../../assets/images/advisors/freddy.png";
 import cesar from "../../assets/images/advisors/cesar.png";
 import henry_lau from "../../assets/images/advisors/henry_lau.png";
 import kaimin_shih from "../../assets/images/advisors/kaimin_shih.png";
-import { Advisor } from "./advisor";
 
 export const listOfAdvisors = [
   {
