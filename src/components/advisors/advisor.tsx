@@ -80,10 +80,9 @@ export const Advisor: FunctionComponent<AdvisorComponentProps> = ({
           </Modal>
         )}
       </Scale>
-
-      <Image my={1} src={picture} alt={name} rounded="full" size={300} />
-      <Link>
-        <Heading my={1} as="h6" size="sm" onClick={() => setModalOpen(true)}>
+      <Link onClick={() => setModalOpen(true)} textAlign="center">
+        <Image my={1} src={picture} alt={name} rounded="full" size={300} />
+        <Heading my={1} as="h6" size="sm">
           {name}
         </Heading>
       </Link>
