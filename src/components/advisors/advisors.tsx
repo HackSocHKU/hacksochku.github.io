@@ -1,12 +1,11 @@
 import React, { FunctionComponent } from "react";
-import { Flex, Heading } from "@chakra-ui/core";
+import { Flex, Grid, Heading } from "@chakra-ui/core";
 
 import { Advisor } from "./advisor";
 import { listOfAdvisors } from "./listOfAdvisors";
 
 export const Advisors: FunctionComponent = () => (
   <Flex
-    id="team"
     backgroundColor="text"
     direction="column"
     justify="center"
@@ -17,10 +16,17 @@ export const Advisors: FunctionComponent = () => (
     <Heading color="primary" textAlign="center" as="h1" size="2xl">
       <span style={{ fontWeight: "normal" }}>Our</span> Advisors
     </Heading>
-    <Flex maxW="100vw" wrap="wrap" align="center" justify="center">
+    <Grid
+      templateColumns={[
+        "repeat(1, 1fr)",
+        "repeat(1, 1fr)",
+        "repeat(2, 1fr)",
+        "repeat(2, 1fr)",
+      ]}
+    >
       {listOfAdvisors.map((advisorDetails, index) => (
         <Advisor key={index} advisorDetails={advisorDetails} />
       ))}
-    </Flex>
+    </Grid>
   </Flex>
 );

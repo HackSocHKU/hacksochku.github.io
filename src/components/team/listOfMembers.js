@@ -94,7 +94,6 @@ export const listOfMembers = [
     name: "Sakina Bibi",
     picture: sakina,
     role: "Head of Creative Design",
-    linkedin: "https://www.linkedin.com/in/reynard-verill-234685196/",
     description:
       "Sakina is majoring in Global Creative Industries and minoring in Arabic at the University of Hong Kong. She is a polyglot and quirky art enthusiast who's obsessed with felines.",
   },
