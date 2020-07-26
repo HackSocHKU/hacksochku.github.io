@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-chakra-ui`,
+    `gatsby-transformer-remark`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
@@ -22,6 +23,13 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/assets/images/hackSocLogo.png",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
