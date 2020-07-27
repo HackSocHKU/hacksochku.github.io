@@ -1,5 +1,5 @@
 ---
-slug: "/blog/introducing-the-hackathon-society-blog"
+path: "/blog/introducing-the-hackathon-society-blog"
 date: "2020-07-26"
 title: "Introducing The Hackathon Society Blog"
 author: { name: "Welvin Bun", website: "https://welvin21.com" }
