@@ -1,6 +1,7 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useState } from "react";
 
 import {
+  NavBar,
   Home,
   Layout,
   About,
@@ -8,19 +9,20 @@ import {
   Advisors,
   Team,
   Contact,
-  Footer,
 } from "../components";
 
 const IndexPage: FunctionComponent<> = () => {
+  const [activeHash, setActiveHash] = useState("#home");
+
   return (
     <Layout>
+      <NavBar activeHash={activeHash} setActiveHash={setActiveHash} />
       <Home />
       <About />
       <Sponsors />
       <Advisors />
       <Team />
       <Contact />
-      <Footer />
     </Layout>
   );
 };

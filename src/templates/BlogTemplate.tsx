@@ -1,6 +1,8 @@
 import React, { FunctionComponent } from "react";
 import { graphql } from "gatsby";
-import { Box, Heading, Text, Link } from "@chakra-ui/core";
+import { Flex, Heading, Text, Link, Box } from "@chakra-ui/core";
+
+import { Layout } from "../components";
 
 const BlogTemplate: FunctionComponent<any> = ({ data }) => {
   const {
@@ -15,22 +17,26 @@ const BlogTemplate: FunctionComponent<any> = ({ data }) => {
   } = data;
 
   return (
-    <Box p={[4, 6, 8, 8]}>
-      <Heading size="xl">{title}</Heading>
-      <Text>
-        {" "}
-        {date} |{" "}
-        <Link href={authorWebsite} isExternal>
-          {authorName}
-        </Link>{" "}
-      </Text>
-      <Box py={2}>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </Box>
-    </Box>
+    <Layout>
+      <Flex w={"100%"} align="center" justify="center">
+        <Box w={"min(90%, 600px)"} py={[2, 4, 4, 6]}>
+          <Heading size="xl">{title}</Heading>
+          <Text>
+            {" "}
+            {date} |{" "}
+            <Link href={authorWebsite} isExternal>
+              {authorName}
+            </Link>{" "}
+          </Text>
+          <Box py={2}>
+            <div
+              className="blog-post-content"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+          </Box>
+        </Box>
+      </Flex>
+    </Layout>
   );
 };
 
