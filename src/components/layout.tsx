@@ -1,7 +1,7 @@
-import React, { FunctionComponent, ReactNode, useState } from "react";
+import React, { FunctionComponent, ReactNode } from "react";
 import { Box } from "@chakra-ui/core";
 
-import { NavBar } from "./navbar";
+import { Footer } from "./footer";
 
 if (typeof window !== "undefined") {
   require("smooth-scroll")('a[href*="#"]');
@@ -14,14 +14,17 @@ interface LayoutComponentProps {
 export const Layout: FunctionComponent<LayoutComponentProps> = ({
   children,
 }) => {
-  const [activeHash, setActiveHash] = useState("#home");
-
   return (
-    <>
-      <NavBar activeHash={activeHash} setActiveHash={setActiveHash} />
-      <Box as="main" flexDirection="column">
+    <Box>
+      <Box
+        as="main"
+        flexDirection="column"
+        backgroundColor="primary"
+        color="text"
+      >
         {children}
       </Box>
-    </>
+      <Footer />
+    </Box>
   );
 };
