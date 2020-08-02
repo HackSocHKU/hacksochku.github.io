@@ -2,12 +2,16 @@
 path: "/blog/introducing-the-hackathon-society-blog"
 date: "2020-07-26"
 title: "Introducing The Hackathon Society Blog"
-author: { name: "Welvin Bun", website: "https://welvin21.com" }
+author: { name: "Welvin Bun", url: "https://welvin21.com" }
 ---
+
+### Introduction
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id dignissim odio. In volutpat pulvinar sem vitae commodo. Cras in condimentum ligula. Donec eros turpis, interdum et pharetra id, eleifend eget nulla. Aenean dictum tempor vulputate. Duis quam mauris, euismod quis lectus id, dictum lacinia ipsum. Sed lectus nibh, auctor sit amet lacus ac, bibendum gravida justo. Curabitur et dapibus ex, quis euismod neque.
 
 Sed faucibus vel leo sit amet iaculis. Proin nec congue ipsum. Aliquam leo turpis, pellentesque efficitur nulla convallis, eleifend congue nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed volutpat malesuada lectus in imperdiet. Phasellus nisi augue, pulvinar ut dui in, volutpat pharetra enim. Vestibulum vestibulum pellentesque augue, eu porttitor augue dignissim sed. Nam eu mi eu augue convallis ornare. Nulla malesuada hendrerit blandit. Suspendisse augue nisi, dictum quis pretium et, maximus sit amet leo. Curabitur pellentesque, leo quis consectetur dignissim, metus tellus finibus nunc, ac gravida augue purus non arcu. Donec at nibh id ante tincidunt imperdiet. Mauris elementum lorem non elit dignissim, vitae scelerisque purus ornare. Mauris non volutpat odio.
+
+### What is Hackathon Society blog
 
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In vitae volutpat quam. Nunc sed elit in dui cursus aliquam a et dolor. Nunc gravida ligula eu pulvinar imperdiet. Cras nec sollicitudin orci, non interdum purus. Ut tincidunt enim at lorem mollis tempus. Suspendisse vel magna lorem. Pellentesque et libero sit amet erat fermentum maximus.
 
