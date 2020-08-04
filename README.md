@@ -1,6 +1,6 @@
 ## HKU Hackathon Society official website
 
-This is the official website of The Hackathon Society at HKU, live site is up and can be accessed [here](https://hacksochku.github.io/hacksoc_website)
+This is the official website of The Hackathon Society at HKU, live site is up and can be accessed [here](https://hacksochku.github.io)
 
 ## Development guides
 
