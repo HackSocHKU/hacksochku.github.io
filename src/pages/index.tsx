@@ -5,6 +5,7 @@ import {
   Home,
   Layout,
   About,
+  Events,
   Sponsors,
   Advisors,
   Team,
@@ -19,6 +20,7 @@ const IndexPage: FunctionComponent<> = () => {
       <NavBar activeHash={activeHash} setActiveHash={setActiveHash} />
       <Home />
       <About />
+      <Events />
       <Sponsors />
       <Advisors />
       <Team />
