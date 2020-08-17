@@ -4,7 +4,7 @@ import { Flex, Heading, Text, Link, Box } from "@chakra-ui/core";
 import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 
-import { Layout } from "../components";
+import { Layout, SEO } from "../components";
 import { MDXProviderComponents } from "./MDXProviderComponents";
 
 const BlogTemplate: FunctionComponent<any> = ({ data }) => {
@@ -36,6 +36,7 @@ const BlogTemplate: FunctionComponent<any> = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={title} />
       <Flex w={"100%"} justify="center">
         <Box w={"min(90%, 600px)"} py={[2, 4, 4, 6]}>
           <BlogHeader />
