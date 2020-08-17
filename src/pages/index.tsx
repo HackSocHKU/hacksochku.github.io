@@ -1,5 +1,7 @@
 import React, { FunctionComponent, useState } from "react";
 
+import { SEO } from "../components";
+
 import {
   NavBar,
   Home,
@@ -17,6 +19,7 @@ const IndexPage: FunctionComponent<> = () => {
 
   return (
     <Layout>
+      <SEO title="Home" />
       <NavBar activeHash={activeHash} setActiveHash={setActiveHash} />
       <Home />
       <About />

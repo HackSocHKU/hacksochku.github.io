@@ -8,3 +8,4 @@ export { Contact } from "./contact";
 export { Footer } from "./footer";
 export { Advisors } from "./advisors";
 export { Events } from "./events";
+export { SEO } from "./seo";
