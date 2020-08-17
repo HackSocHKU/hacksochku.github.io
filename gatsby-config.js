@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `HackSoc HKU`,
+    description: `Official website of The HKU Hackathon Society`,
+    author: `Welvin Bun`,
   },
-  pathPrefix: "/hacksoc_website",
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,

@@ -2,11 +2,12 @@ import React, { FunctionComponent } from "react";
 import { Heading, Flex } from "@chakra-ui/core";
 import { Link } from "gatsby";
 
-import { Layout } from "../components";
+import { Layout, SEO } from "../components";
 
 const NotFoundPage: FunctionComponent = () => {
   return (
     <Layout>
+      <SEO title="Not found" />
       <Flex
         backgroundColor="primary"
         h="100vh"
