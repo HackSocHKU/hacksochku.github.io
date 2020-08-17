@@ -24,7 +24,7 @@ Pellentesque leo neque, consectetur non justo auctor, porttitor egestas nisl. Do
 
 Duis porttitor est vehicula sem pellentesque, non aliquet diam rutrum. Ut efficitur semper magna. Nullam eget mauris nec magna condimentum ornare vitae sed ipsum. Proin pharetra libero at erat consequat rutrum. Nullam ullamcorper quam sed urna imperdiet, in maximus nisi facilisis. Nunc mattis, leo et rutrum efficitur, velit lacus faucibus tortor, et egestas velit urna at erat. Quisque consequat viverra justo eu ullamcorper. Sed sed sem sed libero egestas iaculis nec quis ligula. Pellentesque ex massa, fringilla ut facilisis vitae, ultrices ut turpis. Fusce rhoncus rutrum urna, quis aliquam felis aliquet vitae.
 
-```
+```python
 # Load libraries
 from pandas import read_csv
 from pandas.plotting import scatter_matrix

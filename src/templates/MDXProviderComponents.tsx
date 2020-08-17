@@ -11,18 +11,5 @@ export const MDXProviderComponents = (): MDXProviderComponentsProp => {
     h4: props => <Heading marginY={4} as={`h4`} size="md" {...props} />,
     h5: props => <Heading marginY={4} as={`h5`} size="sm" {...props} />,
     h6: props => <Heading marginY={4} as={`h6`} size="xs" {...props} />,
-    code: props => (
-      <Flex as="pre" justify="center">
-        <Code
-          style={{ overflowX: "scroll" }}
-          w="100%"
-          p={2}
-          borderRadius={"md"}
-          variantColor={"blue"}
-          color={"text"}
-          {...props}
-        />
-      </Flex>
-    ),
   };
 };

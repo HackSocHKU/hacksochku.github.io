@@ -6,6 +6,7 @@
   "author": "HKU Hackathon Society team",
   "dependencies": {
     "@chakra-ui/core": "^0.8.0",
+    "@deckdeckgo/highlight-code": "^1.1.3",
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "@mdx-js/mdx": "^1.6.16",
@@ -20,6 +21,7 @@
     "gatsby-plugin-react-helmet": "^3.3.4",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.6.24",
+    "gatsby-remark-highlight-code": "^1.4.6",
     "gatsby-remark-images": "^3.3.23",
     "gatsby-source-filesystem": "^2.3.11",
     "gatsby-transformer-remark": "^2.8.27",

@@ -3,9 +3,12 @@ import { graphql } from "gatsby";
 import { Flex, Heading, Text, Link, Box } from "@chakra-ui/core";
 import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 
 import { Layout, SEO } from "../components";
 import { MDXProviderComponents } from "./MDXProviderComponents";
+
+deckDeckGoHighlightElement();
 
 const BlogTemplate: FunctionComponent<any> = ({ data }) => {
   const {
