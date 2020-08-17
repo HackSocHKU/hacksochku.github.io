@@ -1,7 +1,7 @@
 ---
-path: "/blog/introducing-the-hackathon-society-blog"
-date: "2020-07-26"
-title: "Introducing The Hackathon Society Blog"
+path: "/blog/introduction-to-artificial-neural-network"
+date: "2020-08-17"
+title: "Introduction to Artificial Neural Network"
 author: { name: "Welvin Bun", url: "https://welvin21.com" }
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id dignissim odio. In volutpat pulvinar sem vitae commodo. Cras in condimentum ligula. Donec eros turpis, interdum et pharetra id, eleifend eget nulla. Aenean dictum tempor vulputate. Duis quam mauris, euismod quis lectus id, dictum lacinia ipsum. Sed lectus nibh, auctor sit amet lacus ac, bibendum gravida justo. Curabitur et dapibus ex, quis euismod neque."
 ---

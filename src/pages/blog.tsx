@@ -1,31 +1,26 @@
 import React, { FunctionComponent } from "react";
 import { graphql } from "gatsby";
-import { Heading, Box, Text } from "@chakra-ui/core";
+import { Heading, Box, Flex } from "@chakra-ui/core";
 
-import { Layout, SEO } from "../components";
+import { Layout, SEO, Post } from "../components";
+import { PostDetails } from "../types";
 
 const Blog: FunctionComponent<any> = ({ data }) => {
-  const posts = data.allMdx.edges;
+  const posts: PostDetails[] = data.allMdx.edges.map(
+    ({ node: { frontmatter: postDetails } }) => postDetails as PostDetails
+  );
 
   return (
     <Layout>
       <SEO title="Blog" />
-      {posts.map(
-        (
-          {
-            node: {
-              frontmatter: { title, author, date },
-            },
-          },
-          index
-        ) => (
-          <Box key={index}>
-            <Heading>{title}</Heading>
-            <Text>by {author.name}</Text>
-            <Text>{date}</Text>
-          </Box>
-        )
-      )}
+      <Flex w={"100%"} justify="center" minHeight="100vh">
+        <Box w={"min(90%, 600px)"} py={[2, 4, 4, 6]}>
+          <Heading mb={[5]}>Hackathon Society blog</Heading>
+          {posts.map((postDetails, index) => (
+            <Post key={index} {...postDetails} />
+          ))}
+        </Box>
+      </Flex>
     </Layout>
   );
 };
@@ -40,7 +35,9 @@ export const blogsQuery = graphql`
       edges {
         node {
           frontmatter {
+            path
             title
+            excerpt
             date(formatString: "MMMM DD, YYYY")
             author {
               name
