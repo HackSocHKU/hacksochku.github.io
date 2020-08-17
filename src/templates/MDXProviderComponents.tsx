@@ -4,7 +4,7 @@ import { MDXProviderComponentsProp } from "@mdx-js/react";
 
 export const MDXProviderComponents = (): MDXProviderComponentsProp => {
   return {
-    p: props => <Text marginY={2} {...props} />,
+    p: props => <Text marginY={4} {...props} />,
     h1: props => <Heading marginY={4} as={`h1`} size="2xl" {...props} />,
     h2: props => <Heading marginY={4} as={`h2`} size="xl" {...props} />,
     h3: props => <Heading marginY={4} as={`h3`} size="l" {...props} />,
