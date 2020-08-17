@@ -3,9 +3,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const blogPostTemplate = require.resolve(`./src/templates/BlogTemplate.tsx`);
 
-  const blogResult = await graphql(`
+  const blogsResult = await graphql(`
     {
-      allMarkdownRemark(
+      allMdx(
+        filter: { fileAbsolutePath: { regex: "/src/blog-posts/" } }
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
       ) {
@@ -21,12 +22,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   `);
 
   // Handle errors
-  if (blogResult.errors) {
+  if (blogsResult.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
   }
 
-  blogResult.data.allMarkdownRemark.edges.forEach(
+  blogsResult.data.allMdx.edges.forEach(
     ({
       node: {
         frontmatter: { path },
