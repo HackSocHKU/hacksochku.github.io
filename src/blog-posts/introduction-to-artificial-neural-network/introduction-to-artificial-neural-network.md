@@ -23,3 +23,16 @@ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
 Pellentesque leo neque, consectetur non justo auctor, porttitor egestas nisl. Donec quis arcu at ligula elementum rhoncus a at nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed quam risus, eleifend vitae convallis vitae, pharetra a sapien. Vestibulum tincidunt turpis enim, quis finibus urna tincidunt quis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus laoreet laoreet mollis. Proin laoreet a enim id pretium. Nulla facilisi. Aliquam auctor consequat ipsum vitae ullamcorper. Etiam eu consequat orci.
 
 Duis porttitor est vehicula sem pellentesque, non aliquet diam rutrum. Ut efficitur semper magna. Nullam eget mauris nec magna condimentum ornare vitae sed ipsum. Proin pharetra libero at erat consequat rutrum. Nullam ullamcorper quam sed urna imperdiet, in maximus nisi facilisis. Nunc mattis, leo et rutrum efficitur, velit lacus faucibus tortor, et egestas velit urna at erat. Quisque consequat viverra justo eu ullamcorper. Sed sed sem sed libero egestas iaculis nec quis ligula. Pellentesque ex massa, fringilla ut facilisis vitae, ultrices ut turpis. Fusce rhoncus rutrum urna, quis aliquam felis aliquet vitae.
+
+```
+# Load libraries
+from pandas import read_csv
+from pandas.plotting import scatter_matrix
+from matplotlib import pyplot
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import StratifiedKFold
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+```
