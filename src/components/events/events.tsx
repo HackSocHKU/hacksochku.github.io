@@ -25,7 +25,7 @@ const EventContent: FunctionComponent = () => (
 
 export const Events: FunctionComponent = () => (
   <Flex
-    id="about"
+    id="events"
     px={[10, 20, 30, 40]}
     py={[10, 10, 20, 20]}
     color="primary"
