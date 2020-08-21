@@ -12,10 +12,7 @@ const EventContent: FunctionComponent = () => (
     <Text fontSize={["md", "md", "lg", "lg"]}>{eventsDescription}</Text>
     <Flex direction="center" justify="center" py={3}>
       <Button backgroundColor="primary" color="text" _hover={{ bg: "primary" }}>
-        <Link
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeIUiGCUrceRNAir7Q1ht4rGKEfGeJsWwQmTMT_R75vuicdZg/viewform?usp=sf_link"
-          isExternal
-        >
+        <Link href="https://forms.gle/UQTkp59ZK6jZNNzb8" isExternal>
           Register
         </Link>
       </Button>
