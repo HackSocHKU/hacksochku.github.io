@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Heading, Text, Button, Flex, Link } from "@chakra-ui/core";
 
 const eventsDescription =
-  "We plan to organize an Annual proprietary Hackathon which will not just be limited to HKU students but students from other universities as well. The main purpose behind this is to promote cross-discipline collaboration and give our students a platform to connect with like-minded individuals. This would promote creativity and curiosity among our students which will help them take the initiative to start their own projects. We will also have workshops to prepare the potential participants for the hackathon.";
+  "Hackathon Society brings to you a fast paced challenge for everyone who loves to brainstorm. This event requires no coding or technical expertise. We're looking for fresh, innovative ideas. Hackathon Society introduces IDEATHON, a fast-paced challenge for everyone who loves to LEARN and BUILD something cool. We are fortunate to have Mr Cesar Jung Harada to share his experiences and give expert advice on Design Thinking.";
 
 const EventContent: FunctionComponent = () => (
   <Box>

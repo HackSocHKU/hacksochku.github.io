@@ -6,7 +6,6 @@ import { listOfMembers } from "./listOfMembers";
 
 export const Team: FunctionComponent = () => (
   <Flex
-    id="team"
     backgroundColor="text"
     direction="column"
     justify="center"
