@@ -1,6 +1,6 @@
 ---
 path: "/blog/introduction-to-artificial-neural-network"
-date: "2020-08-17"
+date: "2020-09-14"
 title: "Introduction to Artificial Neural Network"
 author: { name: "Welvin Bun", url: "https://welvin21.com" }
 excerpt: "The term Neural Network has been used as a buzzword a lot more than anything else in the world of Computer Science, especially during the last couple decades. What exactly is it?"

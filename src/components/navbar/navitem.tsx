@@ -7,6 +7,7 @@ interface NavItemComponentProps {
   text: string;
   activeHash: string;
   setActiveHash: (activeHash: string) => void;
+  isPage?: boolean;
 }
 
 export const NavItem: FunctionComponent<NavItemComponentProps> = ({
@@ -14,15 +15,21 @@ export const NavItem: FunctionComponent<NavItemComponentProps> = ({
   text,
   activeHash,
   setActiveHash,
-}) => (
-  <Link to={`#${id}`} onClick={() => setActiveHash(`#${id}`)}>
-    <Text
-      color={activeHash === `#${id}` ? "text" : "navItem"}
-      px={[1, 1, 2, 2]}
-      fontSize={["sm", "md", "lg", "lg"]}
-      fontWeight={activeHash === `#${id}` ? 700 : 500}
+  isPage,
+}) => {
+  return (
+    <Link
+      to={isPage ? `/${id}` : `#${id}`}
+      onClick={isPage ? null : () => setActiveHash(`#${id}`)}
     >
-      {text}
-    </Text>
-  </Link>
-);
+      <Text
+        color={activeHash === `#${id}` ? "text" : "navItem"}
+        px={[1, 1, 2, 2]}
+        fontSize={["sm", "md", "lg", "lg"]}
+        fontWeight={activeHash === `#${id}` ? 700 : 500}
+      >
+        {text}
+      </Text>
+    </Link>
+  );
+};

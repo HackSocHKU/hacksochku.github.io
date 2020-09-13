@@ -16,7 +16,8 @@ export const routes = [
     text: "Team",
   },
   {
-    id: "contact",
-    text: "Contact",
+    id: "blog",
+    text: "Blog",
+    isPage: true,
   },
 ];

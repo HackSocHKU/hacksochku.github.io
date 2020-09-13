@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from "react";
-import { graphql } from "gatsby";
+import { graphql, Link as GatsbyLink } from "gatsby";
 import { Heading, Box, Flex } from "@chakra-ui/core";
+import { MdArrowBack } from "react-icons/md";
 
 import { Layout, SEO, Post } from "../components";
 import { PostDetails } from "../types";
@@ -15,6 +16,9 @@ const Blog: FunctionComponent<any> = ({ data }) => {
       <SEO title="Blog" />
       <Flex w={"100%"} justify="center" minHeight="100vh">
         <Box w={"min(90%, 600px)"} py={[2, 4, 4, 6]}>
+          <GatsbyLink to="/">
+            <Box as={MdArrowBack} size={"20px"} />
+          </GatsbyLink>
           <Heading mb={[5]}>Hackathon Society blog</Heading>
           {posts.map((postDetails, index) => (
             <Post key={index} {...postDetails} />
