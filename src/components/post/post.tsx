@@ -10,7 +10,7 @@ export const Post: FunctionComponent<PostDetails> = ({
   title,
   excerpt,
   date,
-  author: { name, url },
+  author: { name: authorName, url: authorURL },
 }) => {
   return (
     <Box mt={2} mb={[4, 4, 8, 8]}>
@@ -24,9 +24,13 @@ export const Post: FunctionComponent<PostDetails> = ({
         <Text>
           {" "}
           {date} |{" "}
-          <Link href={url} isExternal>
-            {name}
-          </Link>{" "}
+          {authorURL ? (
+            <Link href={authorURL} isExternal>
+              {authorName}
+            </Link>
+          ) : (
+            <>{authorName}</>
+          )}
         </Text>
       </Box>
     </Box>

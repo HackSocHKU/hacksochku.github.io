@@ -9,6 +9,7 @@ import { Layout, SEO } from "../components";
 import { MDXProviderComponents } from "./MDXProviderComponents";
 
 deckDeckGoHighlightElement();
+require(`katex/dist/katex.min.css`);
 
 const BlogTemplate: FunctionComponent<any> = ({ data }) => {
   const {
