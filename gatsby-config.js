@@ -48,6 +48,12 @@ module.exports = {
               terminal: "carbon",
             },
           },
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: `ignore`,
+            },
+          },
         ],
       },
     },

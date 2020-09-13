@@ -9,6 +9,7 @@ import { Layout, SEO } from "../components";
 import { MDXProviderComponents } from "./MDXProviderComponents";
 
 deckDeckGoHighlightElement();
+require(`katex/dist/katex.min.css`);
 
 const BlogTemplate: FunctionComponent<any> = ({ data }) => {
   const {
@@ -29,9 +30,13 @@ const BlogTemplate: FunctionComponent<any> = ({ data }) => {
         <Text>
           {" "}
           {date} |{" "}
-          <Link href={authorURL} isExternal>
-            {authorName}
-          </Link>{" "}
+          {authorURL ? (
+            <Link href={authorURL} isExternal>
+              {authorName}
+            </Link>
+          ) : (
+            <>{authorName}</>
+          )}
         </Text>
       </>
     );
