@@ -1,21 +1,25 @@
 ---
 path: "/blog/introducing-the-hackathon-society-blog"
-date: "2020-07-26"
+date: "2020-09-13"
 title: "Introducing The Hackathon Society Blog"
-author: { name: "Welvin Bun", url: "https://welvin21.com" }
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id dignissim odio. In volutpat pulvinar sem vitae commodo. Cras in condimentum ligula. Donec eros turpis, interdum et pharetra id, eleifend eget nulla. Aenean dictum tempor vulputate. Duis quam mauris, euismod quis lectus id, dictum lacinia ipsum. Sed lectus nibh, auctor sit amet lacus ac, bibendum gravida justo. Curabitur et dapibus ex, quis euismod neque."
+author: { name: "Siddharth Agarwal" }
+excerpt: "The word Hackathon has been largely associated with Computers and coding for a long time and we at Hackathon Society want to break that stigma by organizing hackathons which do not require an individual to have any programming knowledge."
 ---
 
-### Introduction
+### Why Hackathon Society?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id dignissim odio. In volutpat pulvinar sem vitae commodo. Cras in condimentum ligula. Donec eros turpis, interdum et pharetra id, eleifend eget nulla. Aenean dictum tempor vulputate. Duis quam mauris, euismod quis lectus id, dictum lacinia ipsum. Sed lectus nibh, auctor sit amet lacus ac, bibendum gravida justo. Curabitur et dapibus ex, quis euismod neque.
+The word **Hackathon** has been largely associated with Computers and coding for a long time and we at Hackathon Society want to break that stigma by organizing hackathons which do not require an individual to have any programming knowledge. The only requirement to join our hackathon is a will to learn.
+The Society’s motto “build something today to create a better tomorrow” is something each of our members believes in.
+The motivation behind starting the Hackathon society was to learn by doing. Most of us acquire knowledge but do not acquire skill. HackSoc is for everyone who feels like classroom learning isn’t enough for them, for those who want to do something bigger with their talents, for those who are crazy enough to think that they can change the world.
 
-Sed faucibus vel leo sit amet iaculis. Proin nec congue ipsum. Aliquam leo turpis, pellentesque efficitur nulla convallis, eleifend congue nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed volutpat malesuada lectus in imperdiet. Phasellus nisi augue, pulvinar ut dui in, volutpat pharetra enim. Vestibulum vestibulum pellentesque augue, eu porttitor augue dignissim sed. Nam eu mi eu augue convallis ornare. Nulla malesuada hendrerit blandit. Suspendisse augue nisi, dictum quis pretium et, maximus sit amet leo. Curabitur pellentesque, leo quis consectetur dignissim, metus tellus finibus nunc, ac gravida augue purus non arcu. Donec at nibh id ante tincidunt imperdiet. Mauris elementum lorem non elit dignissim, vitae scelerisque purus ornare. Mauris non volutpat odio.
+### Who are we?
 
-### What is Hackathon Society blog
+The members of the society are students at the University of Hong Kong from various disciplines. Our interests range from linguistics to computers, from marketing to rocketry, but all of us work towards a common goal of making our lives and lives of people around us better every day.
 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In vitae volutpat quam. Nunc sed elit in dui cursus aliquam a et dolor. Nunc gravida ligula eu pulvinar imperdiet. Cras nec sollicitudin orci, non interdum purus. Ut tincidunt enim at lorem mollis tempus. Suspendisse vel magna lorem. Pellentesque et libero sit amet erat fermentum maximus.
+### What do we do?
 
-Pellentesque leo neque, consectetur non justo auctor, porttitor egestas nisl. Donec quis arcu at ligula elementum rhoncus a at nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed quam risus, eleifend vitae convallis vitae, pharetra a sapien. Vestibulum tincidunt turpis enim, quis finibus urna tincidunt quis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus laoreet laoreet mollis. Proin laoreet a enim id pretium. Nulla facilisi. Aliquam auctor consequat ipsum vitae ullamcorper. Etiam eu consequat orci.
+The Hackathon Society has taken on the responsibility to organize an annual proprietary Hackathon at the University of Hong Kong, to bring together a community of individuals who love to solve real-world problems. The aim is to inculcate out of the box thinking and problem-solving abilities with the help of several workshops throughout the year. With the help and able guidance of our esteemed mentors, we also plan to take up several projects which can help solve global issues.
 
-Duis porttitor est vehicula sem pellentesque, non aliquet diam rutrum. Ut efficitur semper magna. Nullam eget mauris nec magna condimentum ornare vitae sed ipsum. Proin pharetra libero at erat consequat rutrum. Nullam ullamcorper quam sed urna imperdiet, in maximus nisi facilisis. Nunc mattis, leo et rutrum efficitur, velit lacus faucibus tortor, et egestas velit urna at erat. Quisque consequat viverra justo eu ullamcorper. Sed sed sem sed libero egestas iaculis nec quis ligula. Pellentesque ex massa, fringilla ut facilisis vitae, ultrices ut turpis. Fusce rhoncus rutrum urna, quis aliquam felis aliquet vitae.
+### What is HackBlog?
+
+HackBlog is a series of blogs started by the Hackathon Society. The idea is to collect opinions and views on different technologies, ideas, projects which would be otherwise considered unconventional or utopian. The blogs can range from opinions on a certain technology to project showcase. If you wish to submit a blogpost, do send us an email at [hacksochku@gmail.com](mailto:hacksochku@gmail.com).

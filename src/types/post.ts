@@ -3,7 +3,7 @@ interface PostDetails {
   date: string;
   author: {
     name: string;
-    url: string;
+    url?: string;
   };
   path: string;
   excerpt: string;

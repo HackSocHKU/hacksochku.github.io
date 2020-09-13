@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Heading, Code, Flex } from "@chakra-ui/core";
+import { Text, Heading, Code, Flex, Link } from "@chakra-ui/core";
 import { MDXProviderComponentsProp } from "@mdx-js/react";
 
 export const MDXProviderComponents = (): MDXProviderComponentsProp => {
@@ -11,5 +11,9 @@ export const MDXProviderComponents = (): MDXProviderComponentsProp => {
     h4: props => <Heading marginY={4} as={`h4`} size="md" {...props} />,
     h5: props => <Heading marginY={4} as={`h5`} size="sm" {...props} />,
     h6: props => <Heading marginY={4} as={`h6`} size="xs" {...props} />,
+    a: props => {
+      console.log(props);
+      return <Link {...props} color="blue.500" />;
+    },
   };
 };

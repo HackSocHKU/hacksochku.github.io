@@ -29,9 +29,13 @@ const BlogTemplate: FunctionComponent<any> = ({ data }) => {
         <Text>
           {" "}
           {date} |{" "}
-          <Link href={authorURL} isExternal>
-            {authorName}
-          </Link>{" "}
+          {authorURL ? (
+            <Link href={authorURL} isExternal>
+              {authorName}
+            </Link>
+          ) : (
+            <>{authorName}</>
+          )}
         </Text>
       </>
     );
