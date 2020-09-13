@@ -42,13 +42,14 @@ export const NavBar: FunctionComponent<NavBarComponentProps> = ({
         </Link>
       </Flex>
       <Flex display={["none", "flex", "flex", "flex"]}>
-        {routes.map(({ id, text }) => (
+        {routes.map(({ id, text, isPage }) => (
           <NavItem
             key={id}
             id={id}
             text={text}
             activeHash={activeHash}
             setActiveHash={setActiveHash}
+            isPage={isPage}
           ></NavItem>
         ))}
       </Flex>

@@ -26,13 +26,14 @@ export const Mobile: React.FC<MobileProps> = ({
       <DrawerOverlay />
       <DrawerContent>
         <DrawerBody>
-          {routes.map(({ id, text }) => (
+          {routes.map(({ id, text, isPage }) => (
             <NavItem
               key={id}
               id={id}
               text={text}
               activeHash={activeHash}
               setActiveHash={setActiveHash}
+              isPage={isPage}
             ></NavItem>
           ))}
         </DrawerBody>

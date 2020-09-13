@@ -1,9 +1,10 @@
 import React, { FunctionComponent } from "react";
-import { graphql } from "gatsby";
+import { graphql, Link as GatsbyLink } from "gatsby";
 import { Flex, Heading, Text, Link, Box } from "@chakra-ui/core";
 import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+import { MdArrowBack } from "react-icons/md";
 
 import { Layout, SEO } from "../components";
 import { MDXProviderComponents } from "./MDXProviderComponents";
@@ -26,6 +27,9 @@ const BlogTemplate: FunctionComponent<any> = ({ data }) => {
   const BlogHeader: FunctionComponent = () => {
     return (
       <>
+        <GatsbyLink to="/blog">
+          <Box as={MdArrowBack} size={"20px"} />
+        </GatsbyLink>
         <Heading size="xl">{title}</Heading>
         <Text>
           {" "}
