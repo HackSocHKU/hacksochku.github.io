@@ -19,6 +19,7 @@ const BlogTemplate: FunctionComponent<any> = ({ data }) => {
         title,
         date,
         author: { name: authorName, url: authorURL },
+        excerpt,
       },
       body: content,
     },
@@ -27,9 +28,11 @@ const BlogTemplate: FunctionComponent<any> = ({ data }) => {
   const BlogHeader: FunctionComponent = () => {
     return (
       <>
-        <GatsbyLink to="/blog">
-          <Box as={MdArrowBack} size={"20px"} />
-        </GatsbyLink>
+        <Box w={"min-content"}>
+          <GatsbyLink to="/blog">
+            <Box as={MdArrowBack} size={"20px"}></Box>
+          </GatsbyLink>
+        </Box>
         <Heading size="xl">{title}</Heading>
         <Text>
           {" "}
@@ -48,7 +51,7 @@ const BlogTemplate: FunctionComponent<any> = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={title} />
+      <SEO title={title} description={excerpt} />
       <Flex w={"100%"} justify="center">
         <Box w={"min(90%, 600px)"} py={[2, 4, 4, 6]}>
           <BlogHeader />
