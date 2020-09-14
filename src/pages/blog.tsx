@@ -16,9 +16,11 @@ const Blog: FunctionComponent<any> = ({ data }) => {
       <SEO title="Blog" />
       <Flex w={"100%"} justify="center" minHeight="100vh">
         <Box w={"min(90%, 600px)"} py={[2, 4, 4, 6]}>
-          <GatsbyLink to="/">
-            <Box as={MdArrowBack} size={"20px"} />
-          </GatsbyLink>
+          <Box w={"min-content"}>
+            <GatsbyLink to="/">
+              <Box as={MdArrowBack} size={"20px"} />
+            </GatsbyLink>
+          </Box>
           <Heading mb={[5]}>Hackathon Society blog</Heading>
           {posts.map((postDetails, index) => (
             <Post key={index} {...postDetails} />
