@@ -18,7 +18,7 @@ const socialAccounts = [
   },
   {
     icon: <InstagramIcon size={25} color="#000" />,
-    link: "https://www.instagram.com/hacksoc_hku/",
+    link: "https://www.instagram.com/hackathonsociety_hku/",
   },
   {
     icon: <GithubIcon size={25} color="#000" />,
