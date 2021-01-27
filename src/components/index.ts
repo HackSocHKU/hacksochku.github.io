@@ -10,3 +10,4 @@ export { Advisors } from "./advisors";
 export { Events } from "./events";
 export { SEO } from "./seo";
 export { Post } from "./post";
+export { Event } from "./event";

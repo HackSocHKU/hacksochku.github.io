@@ -8,12 +8,13 @@ export const routes = [
     text: "About",
   },
   {
-    id: "sponsors",
-    text: "Sponsors",
-  },
-  {
     id: "team",
     text: "Team",
+  },
+  {
+    id: "events",
+    text: "Events",
+    isPage: true,
   },
   {
     id: "blog",
