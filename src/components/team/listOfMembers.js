@@ -7,7 +7,6 @@ import aarushi from "../../assets/images/members/aarushi.jpg";
 import reynard from "../../assets/images/members/reynard.jpg";
 import anuj from "../../assets/images/members/anuj.jpg";
 import pranay from "../../assets/images/members/pranay.jpg";
-import sakina from "../../assets/images/members/sakina.jpg";
 
 export const listOfMembers = [
   {
@@ -89,12 +88,5 @@ export const listOfMembers = [
     github: "https://www.github.com/pranay1208",
     description:
       "Pranay is a software developer with a passion for making video games. He loves combining creativity with coding to build out-of-the-box solutions and user-facing products. He is majoring in Computer Science at The University of Hong Kong",
-  },
-  {
-    name: "Sakina Bibi",
-    picture: sakina,
-    role: "Head of Creative Design",
-    description:
-      "Sakina is majoring in Global Creative Industries and minoring in Arabic at the University of Hong Kong. She is a polyglot and quirky art enthusiast who's obsessed with felines.",
   },
 ];

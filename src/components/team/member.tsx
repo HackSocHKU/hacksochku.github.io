@@ -17,7 +17,7 @@ interface MemberDetails {
 }
 
 interface MemberComponentProps {
-  memberDetails: MembersDetails;
+  memberDetails: MemberDetails;
 }
 
 const MemberInfo: FunctionComponent<MemberComponentProps> = ({

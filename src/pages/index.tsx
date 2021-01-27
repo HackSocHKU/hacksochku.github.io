@@ -1,6 +1,7 @@
 import React, { FunctionComponent, useState } from "react";
-
+import { graphql } from "gatsby";
 import { SEO } from "../components";
+import { EventDetails } from "../types";
 
 import {
   NavBar,
@@ -14,7 +15,10 @@ import {
   Contact,
 } from "../components";
 
-const IndexPage: FunctionComponent<> = () => {
+const IndexPage: FunctionComponent<any> = ({ data }) => {
+  // const events: EventDetails[] = data.allMdx.edges.map(
+  //   ({ node: { frontmatter: eventDetails } }) => eventDetails as EventDetails
+  // );
   const [activeHash, setActiveHash] = useState("#home");
 
   return (
@@ -23,7 +27,7 @@ const IndexPage: FunctionComponent<> = () => {
       <NavBar activeHash={activeHash} setActiveHash={setActiveHash} />
       <Home />
       <About />
-      <Events />
+      <Events {...data} />
       <Sponsors />
       <Advisors />
       <Team />
@@ -31,5 +35,31 @@ const IndexPage: FunctionComponent<> = () => {
     </Layout>
   );
 };
+
+export const eventQuery = graphql`
+  query {
+    allMdx(
+      filter: {
+        fileAbsolutePath: { regex: "/src/event-posts/" }
+        frontmatter: { status: { eq: "Upcoming" } }
+      }
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 1000
+    ) {
+      edges {
+        node {
+          frontmatter {
+            path
+            title
+            excerpt
+            date
+            imageUrl
+            link
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage;
